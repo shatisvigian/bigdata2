@@ -16,20 +16,35 @@
                 <label>Address</label>
                  <input type='text' name='Address' class='form-control' value=''>
             </div>
+            <div>
+                <button type="submit" class="btn btn-dark">submit</button>
+            </div>
         </div>
 
-        <div>
-            <button type="submit" class="btn btn-dark">submit</button>
-        </div>
 
         <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text">Upload</span>
             </div>
             <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                <input type="file" name='file' class="custom-file-input" id="inputGroupFile01">
                 <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
             </div>
+            {{-- <div>
+                <button type="submit" class="btn btn-dark">submit</button>
+            </div> --}}
+        </div>
+
+        {{-- <div class="input-group">
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile04">
+                <label>Choose File</label>
+
+            </div>
+        </div> --}}
+
+
+        
 
 
     
