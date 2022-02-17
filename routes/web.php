@@ -22,7 +22,8 @@ Route::get('/home2', [App\Http\Controllers\Controller::class, 'display'])->middl
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/homepage', [App\Http\Controllers\HomeController::class, 'display'])->name('home');
 Route::get('/form', [App\Http\Controllers\Controller::class, 'index'])->name('home');
+Route::post('/formpengguna', [App\Http\Controllers\Controller::class, 'formpengguna']);
 
 
