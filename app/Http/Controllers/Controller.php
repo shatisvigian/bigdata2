@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\attachment;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -30,11 +31,21 @@ class Controller extends BaseController
         $user->IC = $request->IC;
         $user->Address = $request->Address;
         
-
+        $user->Address=$$path = $request->file('file')->store('public');
         $user->save();
 
         return view('homepage');    
 
     }
+
+    public function muatnaikfile(Request $request){
+        $attachment= new attachment();
+
+
+
+
+        return back();
+    }
+
 }
 
