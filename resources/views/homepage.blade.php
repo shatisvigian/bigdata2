@@ -55,15 +55,15 @@
 </div>
 </body>
 
-{{-- 
-<script>
+ 
+{{-- <script>
 $(document).ready(function() {
   $('#summernote').summernote();
 });
 
-</script> --}}
+</script> 
 
-@endsection
+@endsection --}}
 
 {{-- </html> --}}
         

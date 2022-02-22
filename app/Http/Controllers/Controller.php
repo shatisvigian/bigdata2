@@ -50,5 +50,10 @@ class Controller extends BaseController
         return back();
     }
 
+    public function muaknaikgambar(Request $request)
+
+       
+
+
 }
 
