@@ -31,7 +31,7 @@ class Controller extends BaseController
         $user->IC = $request->IC;
         $user->Address = $request->Address;
         
-        $user->Address=$$path = $request->file('file')->store('public');
+        // $user->Address=$$path = $request->file('file')->store('public');
         $user->save();
 
         return view('homepage');    
@@ -39,7 +39,10 @@ class Controller extends BaseController
     }
 
     public function muatnaikfile(Request $request){
-        $attachment= new attachment();
+        $user= new attachment();
+
+        $user->Address=$$path = $request->file('file')->store('public');
+        $user->save();
 
 
 
